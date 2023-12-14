@@ -10,192 +10,168 @@
   <body>
     <div>
       <header>
-        <nav>
-          <h1>Global navigation</h1>
+        <nav aria-label="Основная навигация">
           <a href="#"> <span>Web</span>Studio </a>
           <ul>
-            <li>Studio</li>
-            <li>Portfolio</li>
-            <li>Contacts</li>
+            <li><a href="#"> Studio</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contacts</a></li>
           </ul>
         </nav>
-      </header>
-      <footer>
         <address>
           <a href="tel:+110001111111">+11 (000) 111-11-11</a>
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
         </address>
-      </footer>
+      </header>
     </div>
 
     <!-- Почему написал section, когда инициализировал h? Потому, спецификация на WhatWG.org HTML Living Standard в разделе
     https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements, что с использованием section и без него с элементом h варианты считаются эквивалентными. По этому явное section предоставляет ясную и структурированную организацию документа и дает точно преставление о вложенности или отношение элементов к родительскому элементу -->
-    <section>
+    <main>
       <!-- <header></header> -->
-      <h1>
-        Effective Solutions <br />
-        for Your Business
-      </h1>
-      <button type="button">Order Service</button>
+      <div>
+        <h1>
+          Effective Solutions <br />
+          for Your Business
+        </h1>
+        <button type="button">Order Service</button>
+      </div>
+
       <section>
         <h2>Our advantages</h2>
-        <ul>
-          <li>
-            <section>
-              <h3>Strategy</h3>
-              <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
-              <p>item-1</p>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Punctuality</h3>
-              <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-              <p>item-2</p>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Diligence</h3>
-              <p>
-                Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
-              </p>
-              <p>item-3</p>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Technologies</h3>
-              <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-              <p>item-4</p>
-            </section>
-          </li>
-        </ul>
+        <section>
+          <h3>Strategy</h3>
+          <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+        </section>
+
+        <section>
+          <h3>Punctuality</h3>
+          <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+        </section>
+
+        <section>
+          <h3>Diligence</h3>
+          <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+        </section>
+
+        <section>
+          <h3>Technologies</h3>
+          <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+        </section>
       </section>
 
       <section>
         <h2>Our Team</h2>
-        <ul>
-          <li>
-            <section>
-              <h3>Mark Guerrero</h3>
-              <img src="./img/team/mark-guerrero.jpg" alt="Mark Guerrero" />
-              <header>
-                <p>Product Designer</p>
-                <ul>
-                  <li>
-                    <p>social network - 1</p>
-                    <p>social network - 2</p>
-                    <p>social network - 3</p>
-                    <p>social network - 4</p>
-                  </li>
-                </ul>
-              </header>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Tom Ford</h3>
-              <img src="./img/team/tom-ford.jpg" alt="Tom Ford" />
-              <header>
-                <p>Frontend Developer</p>
-                <ul>
-                  <li>
-                    <p>social network - 1</p>
-                    <p>social network - 2</p>
-                    <p>social network - 3</p>
-                    <p>social network - 4</p>
-                  </li>
-                </ul>
-              </header>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Camila Garcia</h3>
-              <img src="./img/team/camila-garcia.jpg" alt="Camila Garcia" />
-              <header>
-                <p>Marketing</p>
-                <ul>
-                  <li>
-                    <p>social network - 1</p>
-                    <p>social network - 2</p>
-                    <p>social network - 3</p>
-                    <p>social network - 4</p>
-                  </li>
-                </ul>
-              </header>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Daniel Wilson</h3>
-              <img src="./img/team/daniel-wilson.jpg" alt="Daniel Wilson" />
-              <header>
-                <p>UI Designer</p>
-                <ul>
-                  <li>
-                    <p>social network - 1</p>
-                    <p>social network - 2</p>
-                    <p>social network - 3</p>
-                    <p>social network - 4</p>
-                  </li>
-                </ul>
-              </header>
-            </section>
-          </li>
-        </ul>
+
+        <section>
+          <h3>Mark Guerrero</h3>
+          <img src="./img/team/mark-guerrero.jpg" alt="Mark Guerrero" />
+          <header>
+            <p>Product Designer</p>
+            <ul>
+              <li><p>social network - 1</p></li>
+              <li><p>social network - 2</p></li>
+              <li><p>social network - 3</p></li>
+              <li><p>social network - 4</p></li>
+            </ul>
+          </header>
+        </section>
+
+        <section>
+          <h3>Tom Ford</h3>
+          <img src="./img/team/tom-ford.jpg" alt="Tom Ford" />
+          <header>
+            <p>Frontend Developer</p>
+            <ul>
+              <ul>
+                <li><p>social network - 1</p></li>
+                <li><p>social network - 2</p></li>
+                <li><p>social network - 3</p></li>
+                <li><p>social network - 4</p></li>
+              </ul>
+            </ul>
+          </header>
+        </section>
+
+        <section>
+          <h3>Camila Garcia</h3>
+          <img src="./img/team/camila-garcia.jpg" alt="Camila Garcia" />
+          <header>
+            <p>Marketing</p>
+            <ul>
+              <ul>
+                <li><p>social network - 1</p></li>
+                <li><p>social network - 2</p></li>
+                <li><p>social network - 3</p></li>
+                <li><p>social network - 4</p></li>
+              </ul>
+            </ul>
+          </header>
+        </section>
+
+        <section>
+          <h3>Daniel Wilson</h3>
+          <img src="./img/team/daniel-wilson.jpg" alt="Daniel Wilson" />
+          <header>
+            <p>UI Designer</p>
+            <ul>
+              <ul>
+                <li><p>social network - 1</p></li>
+                <li><p>social network - 2</p></li>
+                <li><p>social network - 3</p></li>
+                <li><p>social network - 4</p></li>
+              </ul>
+            </ul>
+          </header>
+        </section>
       </section>
 
       <section>
         <h2>Our Portfolio</h2>
-        <ul>
-          <li>
-            <section>
-              <h3>Banking App</h3>
-              <img src="./img/portfolio/banking-app.jpg" alt="Banking App" />
-              <header>App</header>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Cashless Payment</h3>
-              <img src="./img/portfolio/cashless-payment.jpg" alt="Cashless Payment" />
-              <header>Marketing</header>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Meditation App</h3>
-              <img src="./img/portfolio/meditation-app.jpg" alt="Meditation App" />
-              <header>App</header>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Taxi Service</h3>
-              <img src="./img/portfolio/taxi-service.jpg" alt="Taxi Service" />
-              <header>Marketing</header>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Screen Illustrations</h3>
-              <img src="./img/portfolio/screen-illustrations.jpg" alt="Screen Illustrations" />
-              <header>Design</header>
-            </section>
-          </li>
-          <li>
-            <section>
-              <h3>Online Courses</h3>
-              <img src="./img/portfolio/online-courses.jpg" alt="Online Courses" />
-              <header>Marketing</header>
-            </section>
-          </li>
-        </ul>
+
+        <section>
+          <h3>Banking App</h3>
+          <img src="./img/portfolio/banking-app.jpg" alt="Banking App" />
+          <header>
+            <p>App</p>
+          </header>
+        </section>
+
+        <section>
+          <h3>Cashless Payment</h3>
+          <img src="./img/portfolio/cashless-payment.jpg" alt="Cashless Payment" />
+          <header>
+            <p>Marketing</p>
+          </header>
+        </section>
+
+        <section>
+          <h3>Meditation App</h3>
+          <img src="./img/portfolio/meditation-app.jpg" alt="Meditation App" />
+          <header>
+            <p>App</p>
+          </header>
+        </section>
+
+        <section>
+          <h3>Taxi Service</h3>
+          <img src="./img/portfolio/taxi-service.jpg" alt="Taxi Service" />
+          <header><p>Marketing</p></header>
+        </section>
+
+        <section>
+          <h3>Screen Illustrations</h3>
+          <img src="./img/portfolio/screen-illustrations.jpg" alt="Screen Illustrations" />
+          <header><p>Design</p></header>
+        </section>
+
+        <section>
+          <h3>Online Courses</h3>
+          <img src="./img/portfolio/online-courses.jpg" alt="Online Courses" />
+          <header><p>Marketing</p></header>
+        </section>
       </section>
-      <!-- <footer></footer> -->
-    </section>
+    </main>
 
     <footer>
       <div>
