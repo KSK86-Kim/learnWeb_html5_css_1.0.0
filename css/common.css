@@ -1,0 +1,134 @@
+:root {
+  /* 
+  de - default
+  au - auxiliary 
+  ac - accent
+  pa - paragraph
+  lo - logo
+  da - dark
+  he - heading
+  wh - white
+  */
+
+  /* Text */
+  --font-family__base: 'Roboto', sans-serif;
+  --font-family__logo: 'Raleway', sans-serif;
+
+  --line-height: 1.5;
+  --font-color: #434455;
+
+  /* Background */
+  --background-de: #ffffff;
+  --background-au: #f4f4fd;
+  --background-da: #2e2f42;
+
+  /* Color */
+  --color-ac: #4d5ae5;
+  --color-he: #2e2f42;
+  --color-de: #434455;
+  --color-wh: #ffffff;
+  --color-wh-2: #e7e9fc;
+}
+
+/* //////////////////////////////////////////////// */
+
+/* style */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-de);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-de);
+}
+
+h2,
+h3 {
+  color: var(--color-he);
+}
+h2 {
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.11;
+}
+h3 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* //////////////////////////////////////////////// */
+
+/* body-header */
+
+.body-header--blok {
+  border-bottom: 1px solid var(--color-wh-2);
+}
+
+.body-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1200px;
+}
+/* //////////////////////////////////////////////// */
+
+/* logo */
+.logo {
+  color: var(--color-he);
+  font-family: var(--font-family__logo);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--color-ac);
+}
+
+/* //////////////////////////////////////////////// */
+
+/* nav-global */
+.nav-global {
+  display: flex;
+  align-items: center;
+}
+
+.nav-global--list {
+  display: flex;
+}
+.nav-global--link {
+  color: var(--color-he);
+  font-weight: 500;
+  letter-spacing: 0.32px;
+}
+.nav-global--item:not(:last-child) {
+  margin-right: 40px;
+}
+/* //////////////////////////////////////////////// */
+
+/* address */
+.address a:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* //////////////////////////////////////////////// */
+
+/* body-footer */
+.body-footer {
+  background-color: var(--background-da);
+}
