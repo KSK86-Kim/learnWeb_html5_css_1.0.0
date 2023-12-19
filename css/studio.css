@@ -1,0 +1,57 @@
+.chess-grid > section:nth-child(2n) {
+  background-color: var(--background-au);
+}
+
+/* //////////////////////////////////////////////// */
+/* hero */
+
+.hero--section {
+  background-image: url(../img/hero/desktop.jpg);
+  padding-top: 112px;
+  padding-bottom: 122px;
+}
+
+.hero--container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero--title {
+  margin-top: 0;
+  margin-bottom: 36px;
+
+  text-align: center;
+  color: var(--color-wh);
+}
+
+.hero--btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* //////////////////////////////////////////////// */
+/* advantages */
+
+.advantages--list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages--title {
+  margin-bottom: 8px;
+}
+
+/* //////////////////////////////////////////////// */
+/* team */
+
+.team--list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* //////////////////////////////////////////////// */
+/* portfolio */
+.portfolio--list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
