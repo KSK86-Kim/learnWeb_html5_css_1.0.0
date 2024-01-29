@@ -14,7 +14,6 @@
   --font-family__base: 'Roboto', sans-serif;
   --font-family__logo: 'Raleway', sans-serif;
 
-  --line-height: 1.5;
   --font-color: #434455;
 
   /* Background */
@@ -28,12 +27,20 @@
   --color-de: #434455;
   --color-wh: #ffffff;
   --color-wh-2: #e7e9fc;
+
+  
+  --base-cubic: transition: color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* //////////////////////////////////////////////// */
-/* style */
 
-body {
+/* //////////////////////////////////////////////// */
+/* base */
+
+* {
+  outline: 1px solid tomato;
+}
+
+html {
   font-family: 'Roboto', sans-serif;
   color: var(--color-de);
   line-height: 1.5;
@@ -41,7 +48,6 @@ body {
 
 a {
   color: var(--color-de);
-  /* color: #4d5ae5; */
 }
 
 address {
@@ -72,18 +78,34 @@ p {
   margin-bottom: 0;
 }
 
+p,a {
+  letter-spacing: 0.32px;
+}
+
 h2,
 h3 {
   color: var(--color-he);
 }
-h2 {
+
+h1 {
+  font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 1.12px;
+
+}
+h2 {  
   text-align: center;
 
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   text-transform: capitalize;
 }
 h3 {
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
@@ -120,6 +142,11 @@ h3 {
 
 .link {
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover, .link:focus {
+  color: var(--color-ac);
 }
 
 .white {
@@ -131,17 +158,23 @@ h3 {
   flex-direction: column;
 }
 
-/* //////////////////////////////////////////////// */
-/* btn */
-
 .btn {
   display: block;
+  min-width: 170px;
+
+  text-align: center;
+  
 
   border: none;
   border-radius: 4px;
 
   color: var(--color-wh);
   background-color: var(--color-ac);
+
+
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  line-height: 1.5;
 }
 
 /* //////////////////////////////////////////////// */
@@ -157,7 +190,7 @@ h3 {
 
 .container {
   width: 100%;
-  max-width: 1128px;
+  max-width: 1158px;
 
   margin-left: auto;
   margin-right: auto;
@@ -174,6 +207,18 @@ h3 {
   justify-content: space-between;
   align-items: center;
 
+  border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 1px 6px rgba(46, 47, 66, 0.08);
+    ;
+
+}
+
+.nav-global--link,
+.address--link,
+.logo__black {
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -181,7 +226,7 @@ h3 {
 /* //////////////////////////////////////////////// */
 /* nav-global */
 
-.nav-global {
+.nav-global, .address--list {
   display: flex;
   align-items: center;
 }
@@ -191,10 +236,12 @@ h3 {
   margin-left: 70px;
 }
 .nav-global--link {
+
   color: var(--color-he);
   font-weight: 500;
   letter-spacing: 0.32px;
 }
+
 .nav-global--item:not(:last-child) {
   margin-right: 40px;
 }
@@ -202,35 +249,18 @@ h3 {
 /* //////////////////////////////////////////////// */
 /* address */
 
-.address a:not(:last-child) {
+.address {
+    margin-left: auto;
+}
+.address--item:not(:last-child) {
   margin-right: 40px;
-}
-
-/* //////////////////////////////////////////////// */
-/* body-footer */
-
-.body-footer {
-  color: var(--color-wh);
-  background-color: var(--background-da);
-}
-
-.body-footer--subtitle {
-  color: var(--color-wh);
-  font-weight: 500;
-  letter-spacing: 0.32px;
-}
-
-.body-footer--btn {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 /* //////////////////////////////////////////////// */
 /* logo */
 
 .logo {
+
   font-family: var(--font-family__logo);
   font-size: 18px;
   font-weight: 700;
@@ -249,4 +279,42 @@ h3 {
 
 .logo__white {
   color: var(--color-wh);
+}
+
+/* //////////////////////////////////////////////// */
+/* body-footer */
+
+.body-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+  color: var(--color-wh);
+  background-color: var(--background-da);
+  
+}
+
+.body-footer--subtitle {
+  color: var(--color-wh);
+  font-weight: 500;
+  letter-spacing: 0.32px;
+}
+
+.body-footer--btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+.afterword--wrapper {
+  width: 264px;
+}
+
+.social-media--wrapper {
+  margin-left: 120px;
+}
+
+.social-media--list {
+  display: flex;
 }
